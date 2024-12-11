@@ -5,7 +5,7 @@
       "programas": [
         {
           "nome": "Microsoft Office",
-          "link": "office.html",
+          "link": "programas/office.html",
           "titulo": "Download Microsoft Office"
         }
       ]
