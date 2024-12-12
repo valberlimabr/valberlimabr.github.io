@@ -2,7 +2,7 @@
 @set masver=2.8
 @setlocal DisableDelayedExpansion
 @echo off
-
+chcp 65001 >nul
 
 
 ::  For command line switches, check mass grave[.]dev/command_line_switches
