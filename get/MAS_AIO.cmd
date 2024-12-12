@@ -327,26 +327,26 @@ echo:
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                 Activation Methods:
+echo:                 Metodos de Ativacao:
 echo:
-echo:             [1] HWID        ^|  Windows           ^|   Permanent
-echo:             [2] Ohook       ^|  Office            ^|   Permanent
-echo:             [3] KMS38       ^|  Windows           ^|   Year 2038
-echo:             [4] Online KMS  ^|  Windows / Office  ^|    180 Days
+echo:             [1] HWID        ^|  Windows           ^|   Permanente
+echo:             [2] Ohook       ^|  Office            ^|   Permanente
+echo:             [3] KMS38       ^|  Windows           ^|   Ano 2038
+echo:             [4] Online KMS  ^|  Windows / Office  ^|    180 Dias
 echo:             __________________________________________________      
 echo:
-echo:             [5] Check Activation Status
-echo:             [6] Change Windows Edition
-echo:             [7] Change Office Edition
+echo:             [5] Verificar Status da Ativacao
+echo:             [6] Mudar Versao do Windows
+echo:             [7] Mudar Versao do Office
 echo:             __________________________________________________      
 echo:
 echo:             [8] Troubleshoot
 echo:             [9] Extras
-echo:             [H] Help
-echo:             [0] Exit
+echo:             [H] Ajuda
+echo:             [0] Sair
 echo:       ______________________________________________________________
 echo:
-call :dk_color2 %_White% "      " %_Green% "Choose a menu option using your keyboard [1,2,3,4,5,6,7,8,9,H,0] :"
+call :dk_color2 %_White% "      " %_Green% "Escolha uma opcao usando os numeros do teclado [1,2,3,4,5,6,7,8,9,H,0] :"
 choice /C:123456789H0 /N
 set _erl=%errorlevel%
 
