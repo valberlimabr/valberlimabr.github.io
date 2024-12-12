@@ -1,5 +1,3 @@
-# This script is hosted on https://get.activated.win for https://massgrave.dev
-
 function Check3rdAV {
     $avList = Get-CimInstance -Namespace root\SecurityCenter2 -Class AntiVirusProduct | Where-Object { $_.displayName -notlike '*windows*' } | Select-Object -ExpandProperty displayName
     if ($avList) {
