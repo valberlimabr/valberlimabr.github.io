@@ -10,9 +10,9 @@ function Check3rdAV {
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
-    'http://45.175.4.4/get/VAL_AIO.cmd',
-    'http://45.175.4.4/get/VAL_AIO.cmd',
-    'http://45.175.4.4/get/VAL_AIO.cmd'
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/refs/heads/main/get/VAL_AIO.cmd',
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/refs/heads/main/get/VAL_AIO.cmd',
+    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/refs/heads/main/get/VAL_AIO.cmd'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
