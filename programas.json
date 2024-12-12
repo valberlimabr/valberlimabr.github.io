@@ -14,6 +14,16 @@
           "titulo": "Download uTorrent 2.2.1"
         }
       ]
+    },
+    {
+      "nome": "Edição de Imagens / Videos",
+      "programas": [
+        {
+          "nome": "Photoshop CS6 Portable",
+          "link": "programas/photoshopcs6.html",
+          "titulo": "Download Photoshop CS6 Portable"
+        }
+      ]
     }
   ]
 }
