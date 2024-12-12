@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valberlimabr | Download de Programas</title>
+    <meta name="description" content="">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="revisit-after" content="1 Day">
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .categoria {
+            margin-top: 5px;
+            padding-top: 10px;
+			padding-bottom: 10px;
+			width: 100%;
+        }
+        .programa {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .programa a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .programa a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<style>
+BODY {
+  text-align:left;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size:10pt;
+  color:#000000;
+  background-color:#FFFFFF;
+  margin-left:15px;
+  margin-right:15px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+TABLE {
+  text-align:left;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size:10pt;
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+.title, h1 {
+  font-size:18pt;
+  color:#000000;
+}
+
+.style6 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.green-background:hover {
+  background-color: FFFFCC;
+}
+</style>
+</head>
+<body>
+<table width="68%" border=0 align="center" cellpadding=0 cellspacing=0>
+<tr><td width="70%" valign=top><p>&nbsp;</p>
+  <p><span style="color: black; font-family: helvetica, impact, sans-serif; background-color: #FFFFCC; font-size: 13pt; font-weight: bold"><strong>Bem-vindo a minha página de download de programas!</strong></span></p>
+  <p><strong>Esta página</strong> foi desenvolvida especialmente para técnicos em informática que buscam ferramentas confiáveis e seguras para otimizar o seu trabalho. Aqui você encontrará uma seleção de programas essenciais para o dia a dia da manutenção de computadores, com links diretos para os downloads, garantindo rapidez e segurança.</p>
+  <p>Nosso objetivo é proporcionar uma experiência de download simples e eficiente, ajudando os profissionais de tecnologia a realizar suas tarefas com mais agilidade e precisão. Navegue pelas categorias de programas, escolha o que melhor atende às suas necessidades e faça o download diretamente de fontes seguras.</p>
+  <p><span style="color: white; font-family: helvetica, impact, sans-serif; background-color: red; font-size: 11pt; font-weight: 400"><strong>Encontre abixo os programas mais procurados.</strong></span></p>
+  <br>
+  <p><a href="programas/windows10.html" title="Download Windows 10 ISO">Windows 10 Atualizado 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
+  <p>Windows 10 é um sistema operacional para dispositivos computacionais produzido pela empresa Microsoft lançamento oficialmente em 2015</p>
+  
+  <p><a href="programas/windows11.html" title="Download Windows 11 ISO">Windows 11 Atualizado 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
+  <p>Windows 11 é um sistema operacional para dispositivos computacionais produzido pela empresa Microsoft lançamento oficialmente em 2021</p>
+
+  <p><a href="programas/strelec.html" title="Sergei Strelec">WinPE 11-10 Sergei Strelec 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
+  <p>Disco inicializável Windows 11 e 10 PE - para manutenção de computadores, discos rígidos e partições, backup e restauração de discos e partições, diagnósticos de computador, recuperação de dados</p>
+
+
+  <td valign=top><p><br />
+</p>
+  <div style="overflow: auto; width: 370px; height: 3090px;">
+<div id="conteudo"></div>
+  </div></td>
+</tr></table> 
+    <script>
+        fetch('programas.json')
+            .then(response => response.json())
+            .then(data => {
+                const conteudo = document.getElementById('conteudo');
+
+                // Iterar sobre as categorias e gerar o conteúdo
+                data.categorias.forEach(categoria => {
+                    // Criar a tabela e título da categoria
+                    const categoriaDiv = document.createElement('div');
+                    categoriaDiv.classList.add('categoria');
+
+                    const tabela = document.createElement('table');
+                    const tr = document.createElement('tr');
+                    const td = document.createElement('td');
+                    td.setAttribute('bgcolor', '#0066CC');
+					td.setAttribute('width', '1%');
+					td.setAttribute('style', 'text-align: center; padding: 3px;');
+					
+
+                    const span = document.createElement('span');
+                    span.classList.add('style6');
+                    span.textContent = categoria.nome;
+                    td.appendChild(span);
+
+                    tr.appendChild(td);
+                    tabela.appendChild(tr);
+                    categoriaDiv.appendChild(tabela);
+
+                    // Criar a lista de programas
+                    const ul = document.createElement('ul');
+
+                    categoria.programas.forEach(programa => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = programa.link;
+                        a.title = programa.titulo;
+                        a.textContent = programa.nome;
+                        li.appendChild(a);
+                        ul.appendChild(li);
+                    });
+
+                    categoriaDiv.appendChild(ul);
+                    conteudo.appendChild(categoriaDiv);
+                });
+            })
+            .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+    </script>
+<table width="67%" height="41" border="0" align="center" cellpadding="0" cellspacing="0" id="table4">
+  <tbody>
+    <tr>
+      <td width="89%" height="41" valign="top"><p style="text-align: center;"><font color="#808080" size="1">Esta página é melhor visualizada com uma resolução de tela de 1920x1080 usando o Google Chrome 131.x ou superior.<font size="1"><br>
+          <font color="#808080" size="1">Copyright © 2024 Valberlimabr - Todas as outras marcas registradas são propriedade de seus respectivos donos.</font> 
+		  <a href="terms.html">Terms of Use</a> | <a href="safety_policy.html">Safety Policy</a><br>
+      </font></font></p></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

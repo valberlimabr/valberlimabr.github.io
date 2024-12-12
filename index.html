@@ -73,29 +73,23 @@ TABLE {
 <body>
 <table width="68%" border=0 align="center" cellpadding=0 cellspacing=0>
 <tr><td width="70%" valign=top><p>&nbsp;</p>
-  <p><span style="color: black; font-family: helvetica, impact, sans-serif; background-color: #FFFFCC; font-size: 13pt; font-weight: bold"><strong>Bem-vindo a minha página de download de programas!</strong></span></p>
-  <p><strong>Esta página</strong> foi desenvolvida especialmente para técnicos em informática que buscam ferramentas confiáveis e seguras para otimizar o seu trabalho. Aqui você encontrará uma seleção de programas essenciais para o dia a dia da manutenção de computadores, com links diretos para os downloads, garantindo rapidez e segurança.</p>
-  <p>Nosso objetivo é proporcionar uma experiência de download simples e eficiente, ajudando os profissionais de tecnologia a realizar suas tarefas com mais agilidade e precisão. Navegue pelas categorias de programas, escolha o que melhor atende às suas necessidades e faça o download diretamente de fontes seguras.</p>
-  <p><span style="color: white; font-family: helvetica, impact, sans-serif; background-color: red; font-size: 11pt; font-weight: 400"><strong>Encontre abixo os programas mais procurados.</strong></span></p>
+  <p><span style="color: black; font-family: helvetica, impact, sans-serif; background-color: #FFFFCC; font-size: 13pt; font-weight: bold"><strong>Bem-vindo(a) a minha página do GitHub!</strong></span></p>
+  <p>Sou <strong>@Valberlimabr</strong>, um desenvolvedor apaixonado por tecnologia e inovação. Este repositório é uma coleção de projetos, ideias e experimentos que refletem minha jornada no mundo da programação e desenvolvimento.</p>
+  <br><p><span style="color: black; font-family: helvetica, impact, sans-serif; background-color: #FFFFCC; font-size: 13pt; font-weight: bold"><strong>O que você vai encontrar aqui:</strong></span></p>
+  <p><li>Projetos Open Source: Contribuições para a comunidade e soluções criativas para problemas reais.</li>
+    <li>Ferramentas e Scripts: Automação, utilitários e scripts para facilitar tarefas do dia a dia.</li>
+    <li>Explorações Pessoais: Protótipos, provas de conceito e aprendizado contínuo.</li>
+    <li>Tutoriais e Exemplos: Compartilhamento de conhecimento para ajudar outros desenvolvedores.</li></p>
   <br>
-  <p><a href="programas/windows10.html" title="Download Windows 10 ISO">Windows 10 Atualizado 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
-  <p>Windows 10 é um sistema operacional para dispositivos computacionais produzido pela empresa Microsoft lançamento oficialmente em 2015</p>
-  
-  <p><a href="programas/windows11.html" title="Download Windows 11 ISO">Windows 11 Atualizado 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
-  <p>Windows 11 é um sistema operacional para dispositivos computacionais produzido pela empresa Microsoft lançamento oficialmente em 2021</p>
-
-  <p><a href="programas/strelec.html" title="Sergei Strelec">WinPE 11-10 Sergei Strelec 11/12/2024</a> <img src="imagens/logos/hot_icon.gif" alt="update" width="26" height="9" align="baseline"> </p>
-  <p>Disco inicializável Windows 11 e 10 PE - para manutenção de computadores, discos rígidos e partições, backup e restauração de discos e partições, diagnósticos de computador, recuperação de dados</p>
-
 
   <td valign=top><p><br />
 </p>
-  <div style="overflow: auto; width: 370px; height: 3090px;">
+  <div style="overflow: auto; width: 370px; height: 390px;">
 <div id="conteudo"></div>
   </div></td>
 </tr></table> 
     <script>
-        fetch('programas.json')
+        fetch('index.json')
             .then(response => response.json())
             .then(data => {
                 const conteudo = document.getElementById('conteudo');
