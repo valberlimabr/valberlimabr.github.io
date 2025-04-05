@@ -1,0 +1,314 @@
+/*---------------------------------------------------------------
+  Template Name: astrouniverse multipage astrology website template
+  Description: astrouniverse multipage astrology website template for astrologers and future teller
+  Author: Lucid Themeslab
+  Author URL: https://www.templatemonster.com/store/lucid_themeslab/
+  Version: 1.0.0
+  -----------------------------------------------------------------
+  CSS INDEX
+  ==================
+  1. Basic CSS
+    a.  Color Variables
+    b.  Background Colors
+    c.  Text Colors
+    d.  Border Colors
+    e.  Prime Buttons
+    f.  Secondary Buttons
+    g.  Font Sizes
+
+----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montaga&amp;display=swap');
+
+/* ==================
+  Color Variables
+  ================== */
+
+[data-theme="gold"]{
+  /* bg colors */
+    --header-bg: #00000000;
+    --prime-bg: #E3B130;
+    --footer-bg:#181818;
+    --footer-copy:#191921;
+    --body-bg: #22222E;
+    --alt-bg: #181818;
+    --input-bg: #22222E;
+
+  /* text-colors */
+    --nav-text: #FAFAFA;
+    --prime-text: #E3B130;
+    --heading-text: #FAFAFA;
+    --headingalt-text: #FAFAFA;
+    --subheading-text:#F4F5FA;
+    --subheadingalt-text:#F4F5FA;
+    --para-text: #E6EFEF;
+    --paraalt-text: #E6EFEF;
+    --input-text: #FAFAFA;
+    --footer-text: #FAFAFA;
+    --footercopy-text: #FAFAFA;
+
+  /* RGB color */
+  --prime-rgb: 227, 177, 48;
+  --second-rgb: 152, 111, 4;
+  --dark-rgb: 24, 24, 24;
+
+  /* prime-btn */
+    --prime-btn:#986F04;
+    --prime-btn-shade:#735303;
+    --prime-btn-text: #FAFAFA;
+
+  /* border-colors */
+    --prime-border: #E3B130;
+    --second-border: #BF921D;
+    --tertiary-border: #FAFAFA;
+    --input-border: #986F04;
+
+  /* btn-radius */
+    --btn-radius: 12px;
+
+  /* font family*/
+    --PrimaryFont: "Montaga", serif;
+    --SecondaryFont: "Inter", sans-serif;
+
+  /* font-size */
+    --fs-1: 70px;
+    --fs-2: 60px;
+    --fs-3: 50px;
+    --fs-4: 40px;
+    --fs-5: 30px;
+    --fs-6: 20px;
+    --fs-7: 18px;
+    --fs-8: 16px;
+    --fs-9: 14px;
+    --fs-10: 12px;
+    --fs-11: 10px;
+}
+
+
+[data-theme="purple"]{
+
+  /* bg colors */
+    --header-bg: #181818;
+    --prime-bg: #3a0b8d;
+    --footer-bg:#2b1f3e;
+    --footer-copy:#130727;
+    --body-bg: #0d0914;
+    --alt-bg: #2a1f3e;
+    --input-bg: #161021;
+
+  /* text-colors */
+    --nav-text: #FAFAFA;
+    --prime-text: #bb9aff;
+    --heading-text: #FAFAFA;
+    --headingalt-text: #FAFAFA;
+    --subheading-text:#F4F5FA;
+    --subheadingalt-text:#F4F5FA;
+    --para-text: #E6EFEF;
+    --paraalt-text: #E6EFEF;
+    --input-text: #FAFAFA;
+    --footer-text: #FAFAFA;
+    --footercopy-text: #FAFAFA;
+
+  /* RGB color */
+  --prime-rgb: 227, 177, 48;
+  --second-rgb: 152, 111, 4;
+  --dark-rgb: 24, 24, 24;
+
+  /* prime-btn */
+    --prime-btn:#3a0b8d;
+    --prime-btn-shade:#2a0767;
+    --prime-btn-text: #FAFAFA;
+
+  /* border-colors */
+    --prime-border: #3a0b8d;
+    --second-border: #1d0158;
+    --tertiary-border: #FAFAFA;
+    --input-border: #161021;
+
+  /* btn-radius */
+    --btn-radius: 12px;
+
+  /* font family*/
+    --PrimaryFont: "Montaga", serif;
+    --SecondaryFont: "Inter", sans-serif;
+
+  /* font-size */
+    --fs-1: 70px;
+    --fs-2: 60px;
+    --fs-3: 50px;
+    --fs-4: 40px;
+    --fs-5: 30px;
+    --fs-6: 20px;
+    --fs-7: 18px;
+    --fs-8: 16px;
+    --fs-9: 14px;
+    --fs-10: 12px;
+    --fs-11: 10px;
+}
+
+/* Background Colors */
+
+  .body-bg{
+    background-color:var(--body-bg);
+  }
+  .prime-bg{
+    background-color: var(--prime-bg);
+  }
+  .alt-bg{
+    background-color:var(--alt-bg);
+  }
+  .header-bg{
+    background-color:var(--header-bg);
+  }
+  .footer-bg{
+    background-color:var(--footer-bg);
+  }
+  .footer-copy{
+    background-color:var(--footer-copy);
+  }
+  .input-bg{
+    background-color:var(--input-bg);
+  }
+
+/* Text Colors */
+
+  .nav-text{
+    color:var(--nav-text);
+  }
+  .prime-text{
+    color:var(--prime-text);
+  }
+  .heading-text{
+    color:var(--heading-text);
+  }
+  .headingalt-text{
+    color:var(--headingalt-text);
+  }
+  .subhead-text{
+    color:var(--subheading-text);
+  }
+  .subheadalt-text{
+    color:var(--subheadingalt-text);
+  }
+  .para-text{
+    color:var(--para-text);
+  }
+  .paraalt-text{
+    color:var(--paraalt-text);
+  }
+  .input-text{
+    color: var(--input-text);
+  }
+  .footer-text{
+    color:var(--footer-text);
+  }
+  .footercopy-text{
+    color:var(--footercopy-text);
+  }
+
+/* Border Colors */
+
+  .prime-border{
+    border-color: var(--prime-border) !important;
+  }
+  .second-border{
+    border-color: var(--second-border) !important;
+  }
+  .tertiary-border{
+    border-color: var(--tertiary-border) !important;
+  }
+  .input-border{
+    border-color: var(--input-border) !important;
+  }
+
+ /* Prime Buttons */ 
+  .prime-btn{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 2px solid var(--prime-border) !important;
+    background-color: transparent;
+    color: var(--prime-btn-text) !important;
+    font-size: var(--fs-9) !important;
+    padding: 8px 10px 8px 10px; 
+    border-radius: 6px;
+  } 
+  .prime-btn:hover{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  } 
+  .prime-btn::before{
+    content:'';
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--prime-btn) !important;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 125%);
+    z-index: -1;
+    transition: left 0.5s ease;
+  }
+  .prime-btn::after{
+    content:'';
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--prime-btn) !important;
+    clip-path: polygon(25% 0, 105% 0, 100% 100%, 0% 125%);
+    z-index: -1;
+    transition: right 0.5s ease;
+  }
+  .prime-btn:hover::before{
+    left: -60% !important;
+  }
+  .prime-btn:hover::after{
+    right: -60% !important;
+  }
+/* Font Sizes */
+
+  .fs-1{
+    font-size: var(--fs-1) !important;
+  }
+  .fs-2{
+    font-size: var(--fs-2) !important;
+  }
+  .fs-3{
+    font-size: var(--fs-3) !important;
+  }
+  .fs-4{
+    font-size: var(--fs-4) !important;
+  }
+  .fs-5{
+    font-size: var(--fs-5) !important;
+  }
+  .fs-6{
+    font-size: var(--fs-6) !important;
+  }
+  .fs-7{
+    font-size: var(--fs-7) !important;
+  }
+  .fs-8{
+    font-size: var(--fs-8) !important;
+  }
+  .fs-9{
+    font-size: var(--fs-9) !important;
+  }
+  .fs-10{
+    font-size: var(--fs-10) !important;
+  }
+  .fs-11{
+    font-size: var(--fs-11) !important;
+  }
+
+/* Font Family */
+
+  .primary-font{
+    font-family: var(--PrimaryFont);
+  }
+  .secondary-font{
+    font-family: var(--SecondaryFont);
+  }

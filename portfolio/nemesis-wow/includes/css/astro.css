@@ -1,0 +1,683 @@
+/*---------------------------------------------------------------
+  Template Name: astrouniverse multipage astrology website template
+  Description: astrouniverse multipage astrology website template for astrologers and future teller
+  Author: Lucid Themeslab
+  Author URL: https://www.templatemonster.com/store/lucid_themeslab/
+  Version: 1.0.0
+  -----------------------------------------------------------------
+  CSS INDEX
+  ==================
+  1. Basic Styles
+  2. Header Styles
+  3. Banner Styles
+  4. About Styles
+  5. Services Styles
+  6. Gallery Styles
+  7. Pricing Styles
+  8. Our Astrologer
+  9. Faq Styles
+  10. Form Styles
+  11. Back to top Styles
+  12. voucher 
+----------------------------------------------------------------*/
+
+@import url('astromain.css');
+
+  /* ========================
+    Basic Styles
+  ===========================*/
+  .modal-content {
+    max-height: 90vh;
+  }
+  .navbar {
+    max-height: 140px!important;
+  }
+  .fade-border {
+    height: 80vh;
+    
+    object-fit: cover; /* garante que a imagem preencha o espaço */
+    
+    -webkit-mask-image: 
+      radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: 
+      radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    
+
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: var(--prime-text);
+    text-decoration: none;
+  }
+  body{
+    background-color: var(--body-bg); 
+  }
+  .error:not(.form-control):not(.form-check-input){
+    color: var(--prime-text);
+    background-color: var(--body-bg);
+    border-radius: 2px;
+    font-size: var(--fs-10);
+    padding: 3px 5px;
+    margin: 5px 0 0 5px;
+    width: 95%;
+    text-transform: capitalize;
+    font-family: var(--PrimaryFont);
+  }
+  /* ========================
+   Header Styles
+  ===========================*/
+
+  .nav-link{
+    color: var(--nav-text);
+    text-transform: capitalize;
+    font-size: var(--fs-6);
+    font-family: var(--SecondaryFont);
+  }
+  .nav-item.active > a, .nav-item:hover > a, .nav-link:hover {
+    color: var(--prime-text) !important;
+  }
+  .dropdown.nav-item.active .dropdown-toggle::after, .nav-link.dropdown-toggle:hover::after{
+    color: var(--prime-text) !important;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "\f078";
+    font-family: 'FontAwesome';
+    color: white;
+    border-top: unset;
+    border-right: unset;
+    border-bottom: unset;
+    border-left: unset;
+    font-size: 12px;
+    transition: 0.5s ease;
+  }
+  .dropdown-toggle.show::after {
+    transform: rotate(-180deg);
+  }
+
+  .header-dropdown-menu{ 
+    border-radius: 8px;
+    background-color: var(--body-bg);
+    padding: 15px; 
+    min-width: 200px;
+  }
+  
+  /* ========================
+    Banner Styles
+  ===========================*/
+
+  .banner-main{
+    background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/banner1.png)repeat;
+    width: 100%;
+    background-size: cover;
+
+  }
+  .page-banner-main{
+    background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/about.jpg)repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    /* -webkit-animation: bannerup 10s linear infinite; */
+    /* animation: bannerup 10s linear infinite; */
+  }
+  @keyframes bannerup {
+    from { background-position: 0 0; }
+    to { background-position: 0px -490px; }
+  }
+  .banner-content{
+    min-height: 700px;
+  }
+  .page-content{
+    min-height: 400px;
+    display: flex;
+    align-items: center; 
+  }
+  .page-content-box{
+    width: 750px; 
+  }
+  /* Banner img rotate */
+    .horoscope-main{
+      position: relative;
+      max-width: 100%;
+    }
+    .daily-horoscope img{
+      max-width: 150px;
+      margin: auto;
+    }
+    .bhr-1{
+      width: 500px;
+      -webkit-animation: hr1 40s linear infinite;
+      animation: hr1 40s linear infinite;
+    }
+    .bhr-2{
+      width: 260px;
+      max-width: 100%;
+      position: absolute;
+      top: calc(23% - 5px); 
+      left: calc(50% - 130px);
+    } 
+
+  @media(max-width:1399px){
+    .bhr-1{
+      width: 300px;
+    }
+    .bhr-2{
+      top: calc(25% - 5px); 
+      width: 150px;
+      left: calc(50% - 75px);
+    }
+  }
+
+  @keyframes hr1 {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* ========================
+    About Styles
+  ===========================*/
+
+  .abt-splide .splide__slide{
+    width: 100%;
+  }
+  .abt-splide .splide__slide img{
+    min-height: 100%;
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+   /* ========================
+    Services Styles
+  ===========================*/
+
+  .services-main{
+    background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/banner1.webp)repeat;
+    width: 100%;
+    min-height: 650px;
+    background-size: cover;
+    -webkit-animation: servicebanner 10s linear infinite;
+    animation: servicebanner 10s linear infinite;
+    /* padding-top: 200px; */
+  }
+  @keyframes servicebanner {
+    from { background-position: 0 0; }
+    to { background-position: 0px -490px; }
+  }
+  .service_card .card-img img{
+    max-height: 250px;
+    object-fit: contain;
+  }
+  .service_card:hover .card-img img{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+  } 
+  /* =============
+      Gallery Styles
+     ============= */
+    .grid-wrapper > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-wrapper a{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .grid-wrapper > div a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .grid-wrapper .overlay{
+      font-size: var(--fs-1);
+      background-color: rgba(var(--dark-rgb), 0.4);
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .grid-wrapper a:hover .overlay{
+      opacity: 1 !important;
+    }
+    .grid-wrapper {
+      display: grid;
+      grid-gap: 1.5em;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+    }
+    .grid-wrapper .wide {
+      grid-column: span 2;
+    }
+    .grid-wrapper .tall {
+      grid-row: span 2;
+    }
+    .grid-wrapper .big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    /* lightbox styles */
+    .lb-data .lb-close{
+      background: url(../../assets/images/close.png) top right no-repeat;
+    }
+    .lb-nav a.lb-prev{
+      background: url(../../assets/images/prev.png) left 48% no-repeat;
+    }
+    .lb-nav a.lb-next{
+      background: url(../../assets/images/next.png) right 48% no-repeat;
+    }
+    .lb-cancel{
+      background: url(../../assets/images/loading.gif)no-repeat;
+    }
+/* ========================
+    Pricing Styles
+  ===========================*/
+
+  .pricing-main{
+    background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/banner1.webp)repeat;
+    width: 100%;
+    background-size: cover;
+    -webkit-animation: pricebanner 10s linear infinite;
+    animation: pricebanner 10s linear infinite;
+    padding-top: 200px;
+  }
+  @keyframes pricebanner {
+    from { background-position: 0 0; }
+    to { background-position: 0px -490px; }
+  }
+
+  .inner-price{
+    background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/pricebanner.webp)repeat;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* ==========================
+      Our Astrologer
+  ========================== */
+  .astro-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  }
+  .astro-card img{
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  }
+  .asto-card-body{
+  background-color: rgba(var(--dark-rgb), 0.5);
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: 0.3s ease;
+  transition-delay: 0.10;
+  
+  }
+  .astro-card:hover .asto-card-body{
+    opacity: 1;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+
+  /* ==========================
+      Faq Styles
+  ========================== */
+    .faq-main{
+      background:linear-gradient(0deg, rgba(var(--dark-rgb), 0.7), rgba(var(--dark-rgb), 0.7)),  url(../../assets/images/banner1.webp)repeat;
+      width: 100%;
+      min-height: 650px;
+      background-size: cover;
+      -webkit-animation: faqbanner 10s linear infinite;
+      animation: faqbanner 10s linear infinite;
+      padding-top: 200px;
+    }
+    @keyframes faqbanner {
+      from { background-position: 0 0; }
+      to { background-position: 0px -490px; }
+    }
+    .faq-container{
+      max-width: 1096px;
+      margin: auto;
+    }
+    .faq-container .accordion-button{
+      background-color: unset;
+      box-shadow: unset;
+      border: 0px;
+      color: var(--heading-text);
+      font-size: var(--fs-5);
+    }
+    .faq-container .accordion-item{
+      background-color: unset;
+      color: var(--para-text);
+      /* border-color: var(--prime-border); */
+      border: 1px solid var(--prime-border);
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-family: var(--PrimaryFont);
+    }
+    
+    .accordion-button.collapsed::after {
+      background-image:unset;
+      content: '\f078';
+      font-family: 'FontAwesome';
+      color: var(--prime-text);
+      font-size: var(--fs-6);
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image:unset;
+      content: '\f078';
+      font-family: 'FontAwesome';
+      transform: rotate(-180deg);
+      color: var(--prime-text);
+      font-size: var(--fs-6);
+    }
+
+  /* ==========================
+    Form Styles
+  ========================== */
+  input, select, textarea{
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+    font-family: var(--PrimaryFont);
+  }
+  ::placeholder{
+    color: var(--input-text) !important;
+    text-transform: capitalize;
+    font-family: var(--PrimaryFont);
+  }
+  .form-select option:hover{
+    background-color: var(--alt-bg) !important; 
+  }
+  .form-select{
+    background: url("../../assets/images/chevrondown.png")no-repeat;
+    background-size: 10px;
+    background-position: center right 15px;
+  }
+  input[type="checkbox"]{
+    border-color: var(--prime-border);
+    background-color: var(--footer-bg);
+    box-shadow: unset !important;
+  }
+  input[type="checkbox"]:checked, input[type="checkbox"]:focus, input[type="checkbox"]:active{
+    border-color: var(--prime-border);
+    background-color: var(--footer-bg);
+    box-shadow: unset !important;
+    color: var(--prime-text) !important;
+  }
+  /* ==================
+    Back to top Styles
+    ================== */
+
+    #backtotop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 7px;
+      transition: background-color .3s, opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+    #backtotop:hover {
+      cursor: pointer;
+    }
+    #backtotop.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+  /* ===================
+    voucher 
+  ===================*/
+    #voucher .show{
+      transition: 3s ease-in-out;
+    }
+    .coupon{
+      border: 1px dashed var(--prime-border) !important;
+      background-color: var(--alt-bg);
+      width: 350px;
+      max-width: 100%;
+      margin: 0 auto;
+      letter-spacing: 5px;
+    }
+  
+  /* ===================
+    colour pallete
+  ===================*/
+  .pallete-box-main{
+    position: fixed;
+    top:250px;
+    right: -110px;
+    z-index: 150;
+    width:150px;
+    transition: 0.2s ease-in-out;
+  }
+  .pallete-box-main.active{
+    right: 0px !important;
+  }
+    .pallete-2, .pallete-2:hover, .pallete-1:active{
+      background-color: #4e3a70 !important;
+      width: 30px;
+      height: 30px;
+    }
+    .pallete-3, .pallete-3:hover, .pallete-1:active{
+      background-color: #E3B130 !important;
+      width: 30px;
+      height: 30px;
+    }
+
+    /* Sticky Header */
+    .sticky-header {
+      transition: top 0.4s ease, background-color 0.3s ease;
+      padding: 15px;
+    }
+  
+  /* Smooth slide-down */
+  .sticky-header.active {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 0.885);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+  }
+  
+  /* Optional: Add subtle opacity change for smoother feel */
+  .sticky-header.active {
+      animation: slidedown 0.4s ease;
+  }
+  
+  /* Keyframe animation */
+  @keyframes slidedown {
+      0% {
+          top: -200px;
+          opacity: 0;
+      }
+      100% {
+          top: 0;
+          opacity: 1;
+      }
+  }
+
+  /* service card */
+
+  
+.card-inner{
+  width: 100%;   
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.service_card:hover .card-inner{
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+  width: 100%;
+  min-height: 350px;
+  backface-visibility: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.card-back{
+  color: #fff;
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+}
+
+
+#preloader{
+  background: var(--body-bg) url(../../assets/images/loader3.gif)no-repeat center center;
+  background-size: 200px !important;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+  z-index:3000; 
+}
+
+[data-theme="gold"] #preloader{
+  background: rgb(238, 205, 119) url(../../assets/images/loader4.gif)no-repeat center center;
+  background-size: 200px !important;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+  z-index:3000; 
+}
+[data-theme="purple"] #preloader{
+  background: var(--body-bg) url(../../assets/images/loader3.gif)no-repeat center center;
+  background-size: 200px !important;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+  z-index:3000; 
+}
+.astrocard img{
+    min-height: 250px;
+    width: 250px;
+    max-width: 70%;
+    margin: auto;
+    object-fit: contain;
+}
+.astrocard{
+  transition: 0.5s ease;
+  position: relative;
+}
+.astrocard:hover{
+  transform: scale(0.98);
+  background-color: var(--body-bg);
+  color: var(--heading-text) !important;
+}
+.astrocard:hover h3{ 
+  color: var(--heading-text) !important;
+}
+
+
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute; 
+  content: '';
+  display: block;
+  border: 5px solid var(--prime-border);
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: var(--prime-bg);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+  position: absolute;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: var(--prime-border);
+  border-left-color: var(--prime-border);
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+fieldset, legend {
+  all: revert;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+  
+@media(max-width: 991px){
+ /* Default state - Hidden */
+  .sidebar {
+    opacity: 0;
+    visibility: hidden; 
+    position: absolute;
+    top: 0; 
+    transform: translateX(100%);  
+  }
+}
