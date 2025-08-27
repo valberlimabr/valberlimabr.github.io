@@ -1,5 +1,5 @@
 body {
-    background: url(/images/bg.webp) center center/cover no-repeat fixed;
+    background: url(../images/bg.webp) center center/cover no-repeat fixed;
 }
 #reset-all {
     background-color: #008CBA; 
