@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Deadly Boss Mods",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/DBM335.zip",
+    "folders": [
+      "DBM-AQ20",
+      "DBM-AQ40",
+      "DBM-Azeroth",
+      "DBM-BlackTemple",
+      "DBM-BWL",
+      "DBM-ChamberOfAspects",
+      "DBM-Coliseum",
+      "DBM-Core",
+      "DBM-EyeOfEternity",
+      "DBM-Gruul",
+      "DBM-GUI",
+      "DBM-Hyjal",
+      "DBM-Icecrown",
+      "DBM-Karazhan",
+      "DBM-Magtheridon",
+      "DBM-MC",
+      "DBM-Naxx",
+      "DBM-Onyxia",
+      "DBM-Outland",
+      "DBM-Party-BC",
+      "DBM-Party-Classic",
+      "DBM-Party-WotLK",
+      "DBM-PvP",
+      "DBM-Serpentshrine",
+      "DBM-SpellTimers",
+      "DBM-StatusBarTimers",
+      "DBM-Sunwell",
+      "DBM-TheEye",
+      "DBM-Ulduar",
+      "DBM-VanillaNaxx",
+      "DBM-VanillaOnyxia",
+      "DBM-VoA",
+      "DBM-VPVEM",
+      "DBM-WorldEvents",
+      "DBM-ZG",
+      "DBM-ZulAman"
+    ]
+  },
+  {
+    "name": "Recount",
+    "version": "3.3.5a",
+    "url": "https://valberlimabr.github.io/addons/Recount335.zip",
+    "folders": [
+      "Recount"
+    ]
+  },
+  {
+    "name": "AtlasLoot",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/Atlasloot335.zip",
+    "folders": [
+      "AtlasLoot",
+      "AtlasLoot_BurningCrusade",
+      "AtlasLoot_Crafting",
+      "AtlasLoot_OriginalWoW",
+      "AtlasLoot_WorldEvents",
+      "AtlasLoot_WrathoftheLichKing",
+      "AtlasLootFu"
+    ]
+  },
+  {
+    "name": "Addon Control Panel",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/ACP335.zip",
+    "folders": [
+      "ACP"
+    ]
+  },
+  {
+    "name": "Quest Tradutor",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/QuestTradutor335.zip",
+    "folders": [
+      "QuestTradutor"
+    ]
+  },
+  {
+    "name": "Gear Score",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/GS335.zip",
+    "folders": [
+      "GearScore",
+      "BonusScanner"
+    ]
+  },
+  {
+    "name": "Bagnon",
+    "version": "3.3.5",
+    "url": "https://valberlimabr.github.io/addons/Bagnon335.zip.zip",
+    "folders": [
+      "GearScore",
+      "BonusScanner"
+    ]
+  },
+  {
+    "name": "Pally Power",
+    "version": "Mostra aos paladinos quais buffs usar para que eles não se sobreponham.",
+    "url": "https://valberlimabr.github.io/addons/PallyPower.zip",
+    "folders": [
+      "PallyPower"
+    ]
+  },
+  {
+    "name": "HealBot",
+    "version": "Um Addon de grande suporte para Healers, pois pode fazer inúmeras coisas úteis.",
+    "url": "https://valberlimabr.github.io/addons/HealBot-3.3.5.zip",
+    "folders": [
+      "HealBot",
+      "TitanHealBot"
+    ]
+  },
+  {
+    "name": "NeedToKnow",
+    "version": "Permite monitorar Buffs, Debuffs, Cooldowns e Totens específicos como barras de tempo que sempre aparecem em um local consistente na tela.",
+    "url": "https://valberlimabr.github.io/addons/NeedToKnow-3.3.5.zip",
+    "folders": [
+      "NeedToKnow"
+    ]
+  },
+  {
+    "name": "Skada DamageMeter",
+    "version": "Um medidor de dano modular com vários modos de visualização, lutas segmentadas e janelas personalizáveis",
+    "url": "https://valberlimabr.github.io/addons/Skada-3.3.5.zip",
+    "folders": [
+      "Skada",
+      "SkadaAbsorbs",
+      "SkadaCC",
+      "SkadaDamage",
+      "SkadaDamageTaken",
+      "SkadaDeaths",
+      "SkadaDebuffs",
+      "SkadaDispels",
+      "SkadaEnemies",
+      "SkadaFailbot",
+      "SkadaHealing",
+      "SkadaPower",
+      "SkadaThreat"
+    ]
+  }
+]
