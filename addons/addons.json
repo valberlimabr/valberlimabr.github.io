@@ -101,8 +101,11 @@
     "description": "Addon para melhoria na exibição das bags, juntando todas como se fosse apenas uma.",
     "url": "https://valberlimabr.github.io/addons/Bagnon335.zip",
     "folders": [
-      "GearScore",
-      "BonusScanner"
+      "Bagnon",
+      "Bagnon_Config",
+      "Bagnon_Forever",
+      "Bagnon_GuildBank",
+      "Bagnon_Tooltips"
     ]
   },
   {
