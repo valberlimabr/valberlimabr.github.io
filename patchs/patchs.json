@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Vanilla Dungeon Maps",
+    "version": "1.0.0",
+    "description": "Adiciona mapas de dungeons vanilla.",
+    "url": "https://github.com/valberlimabr/frostbyte-addons/releases/download/PATCH/Dungeon.MAPS.zip",
+    "files": [
+      "patch-M.MPQ"
+    ]
+  }
+]
