@@ -7,5 +7,14 @@
     "files": [
       "patch-M.MPQ"
     ]
+  },
+  {
+    "name": "Dublagem PT-BR",
+    "version": "1.0.0",
+    "description": "Adiciona dublagem em português brasileiro.",
+    "url": "https://github.com/valberlimabr/frostbyte-addons/releases/download/PATCH/Dublagem.PTBR.335.zip",
+    "files": [
+      "patch-PTBR.MPQ"
+    ]
   }
 ]
