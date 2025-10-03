@@ -16,5 +16,19 @@
     "files": [
       "patch-6.MPQ"
     ]
+  },
+  {
+    "name": "Patches do Lobby",
+    "version": "1.0.0",
+    "description": "Adiciona patches do lobby.",
+    "url": ["https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.zip",
+        "https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.z01",
+        "https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.z02",
+        "https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.z03",
+        "https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.z04",
+        "https://github.com/valberlimabr/frostbyte-addons/releases/download/Test/Patch-I.z05"],
+    "files": [
+      "patch-8.MPQ"
+    ]
   }
 ]
